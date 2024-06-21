@@ -1,6 +1,6 @@
 # State University Admissions Analysis
 
-##Data Transformations
+## Data Transformations
 
 ### Objective
 Design a dashboard to analyze the trend of admissions into state universities.
