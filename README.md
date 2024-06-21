@@ -1,5 +1,3 @@
-# University-PowerBI
-
 # State University Admissions Analysis
 
 ## Problem Statement 1: Data Transformations
