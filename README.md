@@ -1,6 +1,6 @@
 # State University Admissions Analysis
 
-## Problem Statement 1: Data Transformations
+##Data Transformations
 
 ### Objective
 Design a dashboard to analyze the trend of admissions into state universities.
@@ -21,7 +21,7 @@ Use Query Editor to perform data modeling by applying transformations like:
 9. Index Columns
 10. Summary Tables
 
-## Problem Statement 2: Advanced Visualizations
+##Advanced Visualizations
 
 ### Objective
 Design a dashboard to analyze the trend of admissions into state universities.
@@ -35,7 +35,7 @@ USA State University Admissions
 - Bottom 10 Universities by Applications
 - % of Applications Vs Universities Fund Allocations
 
-## Problem Statement 3: Shipping Costs Leakages Analysis
+##Shipping Costs Leakages Analysis
 
 ### Use Case
 Top Down and Bottoms Up Analysis to identify Shipping Costs Leakages.
