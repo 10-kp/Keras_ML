@@ -1,38 +1,57 @@
-# State University Admissions Analysis
+# Customer Churn Prediction Using Keras
 
-This repository contains the work on analyzing the trend of admissions into state universities in the USA. The project is divided into two main parts: data transformations and advanced visualizations. The objective is to design a dashboard that provides insightful analysis of the admission trends.
+This repository contains the analysis and model building for predicting customer churn at a telecom company named "Leo". The dataset used is 'Customer_Churn'. The main objective is to analyze the data, derive insights, and build predictive models to identify customers likely to churn.
 
+### Dataset
+
+The dataset Customer_Churn includes various customer details, and the target variable is whether the customer has churned or not.
 ## Data Transformations
+
+### Domain Context
+
+Customer churn refers to when customers stop doing business with a company. This is a critical issue in the telecom industry, and predictive models help identify customers who are likely to churn, allowing the company to take proactive measures.
+
+### Environment
+The analysis and modeling are performed using Jupyter Notebook.
 
 ### Objective
 To perform data modeling by applying various transformations using Query Editor.
 
-### Source
-USA State University Admissions
+###Tasks
 
-###  Data Transformations
-The following transformations are applied to the data  :
-1. Append Data
-2. Split Data
-3. Column Formatting
-4. Fill Columns
-5. Transpose Table
-6. Pivot / Unpivot
-7. Merge Join
-8. Conditional Columns
-9. Index Columns
-10. Summary Tables
+A) Data Manipulation
+Find the total number of male customers.
+Find the total number of customers whose Internet Service is ‘DSL’.
+Extract all the female senior citizens whose Payment Method is Mailed check & store the result in new_customer.
+Extract all those customers whose tenure is less than 10 months or their Total charges is less than $500 & store the result in new_customer.
 
-## Advanced Visualizations
+B) Data Visualization
+Build a pie-chart to show the distribution of customers who would be churning out.
+Build a bar-plot to show the distribution of ‘Internet Service’.
 
-### Objective
-To build custom visualizations using expressions and filters..
+C) Model Building
 
-### Source
-USA State University Admissions
+Model 1
+Build a sequential model using Keras, to find out if the customer would churn or not, using ‘tenure’ as the feature and ‘Churn’ as the target column:
+The visible/input layer should have 12 nodes with ‘Relu’ as the activation function.
+This model would have 1 hidden layer with 8 nodes and ‘Relu’ as the activation function.
+Use ‘Adam’ as the optimization algorithm.
+Fit the model on the train set, with the number of epochs set to 150.
+Predict the values on the test set and build a confusion matrix.
+Plot the ‘Accuracy vs Epochs’ graph.
 
-### Dashboard: Universities Applications Analysis
-- Top 10 Universities by Applications
-- Top 10 Universities by Applications with and without Special Grants
-- Bottom 10 Universities by Applications
-- % of Applications Vs Universities Fund Allocations
+Model 2
+Build the 2nd model using the same target and feature variables:
+Add a drop-out layer after the input layer with a drop-out value of 0.3.
+Add a drop-out layer after the hidden layer with a drop-out value of 0.2.
+Predict the values on the test set and build a confusion matrix.
+Plot the ‘Accuracy vs Epochs’ graph.
+
+Model 3
+Build the 3rd model using ‘Tenure’, ‘Monthly Charges’ & ‘Total Charges’ as the features and ‘Churn’ as the target column:
+The visible/input layer should have 12 nodes with ‘Relu’ as the activation function.
+This model would have 1 hidden layer with 8 nodes and ‘Relu’ as the activation function.
+Use ‘Adam’ as the optimization algorithm.
+Fit the model on the train set, with the number of epochs set to 150.
+Predict the values on the test set and build a confusion matrix.
+Plot the ‘Accuracy vs Epochs’ graph.
