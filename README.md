@@ -4,7 +4,7 @@ This repository contains the analysis and model building for predicting customer
 
 ## Project Notebooks
 
-- [Capstone 2 - Project.ipynb](https://github.com/yourusername/CustomerChurnPrediction/blob/main/Capstone%202%20-%20Project.ipynb)
+- [Capstone 2 - Project.ipynb](https://github.com/10-kp/CustomerChurnPrediction/blob/main/Capstone%202%20-%20Project.ipynb)
 
 ### Dataset
 
