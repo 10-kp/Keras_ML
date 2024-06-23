@@ -1,3 +1,6 @@
+![image](https://github.com/10-kp/Keras_ML/assets/70857174/38307893-bc9f-4fd9-9938-9d5ac5bb704b)
+
+
 # Customer Churn Prediction Using Keras
 
 This repository contains the analysis and model building for predicting customer churn at a telecom company named "Leo". The dataset used is 'Customer_Churn'. The main objective is to analyze the data, derive insights, and build predictive models to identify customers likely to churn.
