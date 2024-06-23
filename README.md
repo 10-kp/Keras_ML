@@ -2,7 +2,7 @@
 
 ![image](https://github.com/10-kp/Keras_ML/assets/70857174/38307893-bc9f-4fd9-9938-9d5ac5bb704b)
 
-This repository contains the analysis and model building for predicting customer churn at a telecom company named "Leo". The dataset used is 'Customer_Churn'. The main objective is to analyze the data, derive insights, and build predictive models to identify customers likely to churn.
+This repository contains the analysis and model building for predicting customer churn at a telecom company named "Leo". The dataset used is 'Customer_Churn'. The main objective is to analyze the data, derive insights, and build predictive models to identify customers likely to churn
 
 ## Project Notebooks
 
@@ -10,54 +10,45 @@ This repository contains the analysis and model building for predicting customer
 
 ### Dataset
 
-The dataset Customer_Churn includes various customer details, and the target variable is whether the customer has churned or not.
-## Data Transformations
+The dataset `Customer_Churn` includes various customer details, and the target variable is whether the customer has churned or not.
 
-### Domain Context
+## About
 
-Customer churn refers to when customers stop doing business with a company. This is a critical issue in the telecom industry, and predictive models help identify customers who are likely to churn, allowing the company to take proactive measures.
+This project aims to predict customer churn for the telecom company "Leo" using Keras. It involves data manipulation, visualization, and model building to identify customers likely to churn.
 
-### Environment
-The analysis and modeling are performed using Jupyter Notebook.
+### Key Features
 
-### Objective
-To perform data modeling by applying various transformations using Query Editor.
+- **Data Manipulation**: Prepare the dataset for analysis and modeling.
+- **Data Visualization**: Visualize customer distribution and service usage.
+- **Model Building**: Develop and evaluate sequential models using Keras.
 
-###Tasks
+## Tasks
 
-A) Data Manipulation
-Find the total number of male customers.
-Find the total number of customers whose Internet Service is ‘DSL’.
-Extract all the female senior citizens whose Payment Method is Mailed check & store the result in new_customer.
-Extract all those customers whose tenure is less than 10 months or their Total charges is less than $500 & store the result in new_customer.
+### A) Data Manipulation
 
-B) Data Visualization
-Build a pie-chart to show the distribution of customers who would be churning out.
-Build a bar-plot to show the distribution of ‘Internet Service’.
+- Find the total number of male customers.
+- Find the total number of customers whose Internet Service is ‘DSL’.
+- Extract specific customer segments based on criteria such as senior citizens and payment methods.
 
-C) Model Building
+### B) Data Visualization
 
-Model 1
-Build a sequential model using Keras, to find out if the customer would churn or not, using ‘tenure’ as the feature and ‘Churn’ as the target column:
-The visible/input layer should have 12 nodes with ‘Relu’ as the activation function.
-This model would have 1 hidden layer with 8 nodes and ‘Relu’ as the activation function.
-Use ‘Adam’ as the optimization algorithm.
-Fit the model on the train set, with the number of epochs set to 150.
-Predict the values on the test set and build a confusion matrix.
-Plot the ‘Accuracy vs Epochs’ graph.
+- Build a pie-chart to show the distribution of customers who would be churning out.
+- Build a bar-plot to show the distribution of ‘Internet Service’.
 
-Model 2
-Build the 2nd model using the same target and feature variables:
-Add a drop-out layer after the input layer with a drop-out value of 0.3.
-Add a drop-out layer after the hidden layer with a drop-out value of 0.2.
-Predict the values on the test set and build a confusion matrix.
-Plot the ‘Accuracy vs Epochs’ graph.
+### C) Model Building
 
-Model 3
-Build the 3rd model using ‘Tenure’, ‘Monthly Charges’ & ‘Total Charges’ as the features and ‘Churn’ as the target column:
-The visible/input layer should have 12 nodes with ‘Relu’ as the activation function.
-This model would have 1 hidden layer with 8 nodes and ‘Relu’ as the activation function.
-Use ‘Adam’ as the optimization algorithm.
-Fit the model on the train set, with the number of epochs set to 150.
-Predict the values on the test set and build a confusion matrix.
-Plot the ‘Accuracy vs Epochs’ graph.
+#### Model 1
+
+- Build a sequential model using Keras with tenure as the feature.
+- Input layer: 12 nodes, 'Relu' activation.
+- Hidden layer: 8 nodes, 'Relu' activation.
+- Optimizer: 'Adam'.
+- Epochs: 150.
+
+#### Model 2
+
+- Add dropout layers to Model 1 for improved robustness.
+
+#### Model 3
+
+- Use tenure, monthly charges, and total charges as features.
