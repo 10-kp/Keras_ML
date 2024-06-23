@@ -2,6 +2,10 @@
 
 This repository contains the analysis and model building for predicting customer churn at a telecom company named "Leo". The dataset used is 'Customer_Churn'. The main objective is to analyze the data, derive insights, and build predictive models to identify customers likely to churn.
 
+## Project Notebooks
+
+- [Capstone 2 - Project.ipynb](https://github.com/yourusername/CustomerChurnPrediction/blob/main/Capstone%202%20-%20Project.ipynb)
+
 ### Dataset
 
 The dataset Customer_Churn includes various customer details, and the target variable is whether the customer has churned or not.
